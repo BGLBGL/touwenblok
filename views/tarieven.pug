@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    include includes/head.pug
+
+  body
+    include includes/navbar.pug
+
+    .container
+          .inner-container
+              h1 Tarieven
+
+    .responsive
+      .gallery
+        a(target='_blank', href='/../../public/styles/images/l_touwenblokcompleet.gif')
+          img(src='/../../public/styles/images/l_touwenblokcompleet.gif')
+        .desc 
+            p Touw en blok: € 3 per uur
+            p Mannilla Touw: 22 mm dikte, 42 meter lengte       
+            p Breekkracht c.a. 3860 kg
+            p Incl. Veiligheidshijshaak 
+            p Draagvermogen 1600 kg
+    .responsive
+      .gallery
+        a(target='_blank', href='/../../public/styles/images/l_bigbag.gif')
+          img(src='/../../public/styles/images/l_bigbag.gif')
+        .desc 
+            p Grote zak: € 5 per dag
+            p Hoogte 110 cm
+            p Vlakke bodem
+            p 4 lusogen
+            p Draagvermogen 1200 kg
+    .responsive
+      .gallery
+        a(target='_blank', href='/../../public/styles/images/netgroen.jpg')
+          img(src='/../../public/styles/images/netgroen.jpg')
+        .desc 
+            p Net: €5 per dag
+            p Maaswijdte 8–8cm
+            p 4 lusogen om te hijsen
+    .clearfix
+
+    include includes/footer.pug

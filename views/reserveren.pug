@@ -1,0 +1,30 @@
+html
+    head
+        -var title = 'Reserveren'
+        include includes/head.pug
+
+    body
+        include includes/navbar.pug
+        
+        .container
+            .login-container
+                #login-form
+                    form(action='/reserveren', method='post')
+                        h1 Boek nu!
+                        h3 Vul de onderstaande gegevens in en wij reageren binnen 15 minuten op uw boeking!
+                        br
+                        input(id = "voornaam", type='text', name='voornaam', placeholder='Voornaam' required)
+                        br
+                        input(id = "achternaam", type='text', name='achternaam', placeholder='Achternaam' required)
+                        br
+                        input(id = "telefoonnummer", type='text', name='Telefoonnummer', placeholder='Telefoonnummer' required)
+                        br
+                        input(id = "email", type='email', name='email', placeholder='Emailadres' required)
+                        br
+                        br
+                        input(class="loginbutton", type='submit', name='submit', value='Login')
+                 
+                h3#error-message
+
+        include includes/footer.pug
+

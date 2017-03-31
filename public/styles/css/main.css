@@ -1,0 +1,449 @@
+/* ==================================== MAIN ELEMENTS ================================ */
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url("/../../public/styles/images/drmakete-lab-41999.jpg") no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+    color: #F16664;
+
+}
+
+h2 {
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+
+h3 {
+    font-size: 18px;
+    color: #484848;
+}
+
+
+/* ===================================== NAVBAR ====================================== */
+.navbar {
+    position: fixed;
+    font-size: 20px;
+}
+
+.navbar-fixed{
+    position: relative;
+    left:0px;
+    top:0px;
+    height:64px;
+    width:100%;
+    background: #F16664;
+    color: #FFF;
+    text-align: center;
+    box-shadow: 10px 0 0 0 black;
+    /*    z-index: 1;*/
+}
+
+ul.top-right {
+    margin: 0px 25px;
+}
+
+ul.top-right li {
+    float: right;
+    display: inline-block;
+    margin: 15px 10px 0px 20px;
+    width: 70px;
+}
+
+ul.top-right li a {
+    color: #FFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+ul.top-right li .btn:hover {
+    font-size: 14px;
+    font-weight: bold;
+/*    background-color: #F16664;*/
+    color: white;
+    border: 2px solid white; 
+    border-radius: 6px;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    display: block;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+ul.top-right li .btn {
+    font-size: 14px;
+    font-weight: bold;
+/*    background-color: #F16664;*/
+    color: white;
+/*    border: 2px solid #F16664; */
+    border-radius: 6px;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    display: block;
+    margin-right: 10px;
+}
+
+
+#logo {
+    margin: 15px 0px 5px 25px;
+    float: left;
+    height: 38px;
+    width: 38px;
+}
+
+
+/* ================================== CONTAINERS ==================================== */
+.container {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.inner-container {
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 700px;
+    padding: 1px;
+    text-align: center;
+    color: #484848;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+/*padding: 0 15px;
+      float: left;
+      margin-top: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 24.99999%;*/
+
+.inner-container2 {
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 300px;
+    padding: 2px;
+    color: #484848;
+    background-color: #FFF;
+    border-radius: 8px;
+    float: left;
+    height: 300px;
+}
+
+.inner-container2 p {
+    font-family: times;
+}
+
+.mySlides {
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 300px;
+    padding: 2px;
+    color: #484848;
+    background-color: #FFF;
+    border-radius: 8px;
+    float: left;
+    display:none;
+    height: 300px;
+}
+
+.inner-containeroverons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 700px;
+    padding: 20px;
+    color: #484848;
+    background-color: #FFF;
+    border-radius: 8px;
+}
+
+.inner-containertarieven {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 800px;
+    padding: 20px;
+    color: #484848;
+    background-color: #FFF;
+    border-radius: 8px;
+}
+/*.inner-containerreserveren {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 340px;
+    padding: 20px;
+    color: #484848;
+    background-color: #FFF;
+    border-radius: 8px;
+}*/
+
+/*
+.aanmelden-container {
+    width: 340px;
+    margin: 0px auto;
+    padding: 0px 20px 20px 20px;
+    background-color: #FFF:
+}
+*/
+
+
+/* =================================== FORMS =================================== */
+/* ==== aanmeld form ==== */
+#aanmeld-form, #login-form {
+    width: 340px;
+    margin: 0px auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+    background-color: #FFF;
+    margin-top: 40px;
+    height: 610px;
+}
+
+#aanmeld-form p, #aanmeld-form h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* ==== Login form ==== */
+input#voornaam, input#email, input#achternaam, input#telefoonnummer, #aanmeld-form form input {
+    margin: 10px;
+    padding-left: 5px;
+    width: 90%;
+}
+
+/* ================================ BUTTONS ==================================== */
+
+/* ====== Loginpage button ====== */
+.loginbutton:hover, .submitbutton-verzenden button:hover {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    color: #F16664;
+    border: 2px solid #F16664; 
+    border-radius: 6px;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.loginbutton, .submitbutton-verzenden button {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #F16664;
+    color: white;
+    border: 2px solid #FFF; 
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 8px;
+}
+
+.start-test-button .btn:hover {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    color: #F16664;
+    border: 2px solid #F16664; 
+    border-radius: 6px;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+
+.start-test-button .btn {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #F16664;
+    color: white;
+    border: 2px solid #FFF; 
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 600px;
+    padding-top: 10px;
+    border-radius: 8px;
+}
+
+.
+
+/* ======= DropDown button ===== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown dropdown-button {
+    color: #F16664;
+    width: 25px;
+    height: 20px;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.dropdown dropdown-button:hover {
+    border: solid 2px #F16664;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    max-width: 640px;
+    min-height: 30px;
+    max-height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 8px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#aanmeld-form a:hover {
+    text-decoration: none;
+}
+
+/* ============================================ IMAGE GALLERY ======================================= */
+
+div.gallery {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      }
+      div.gallery:hover {
+      border: 1px solid #777;
+      }
+      div.gallery img {
+      width: 100%;
+      height: auto;
+      height: 300px;
+      width: 100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      }
+      div.desc {
+      padding: 5px;
+      text-align: center;
+      background-color: white;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      }
+      * {
+      box-sizing: border-box;
+      }
+      .responsive {
+      padding: 0 15px;
+      float: left;
+      margin-top: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 24.99999%;
+      }
+      @media only screen and (max-width: 700px){
+      .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+      }
+      }
+      @media only screen and (max-width: 500px){
+      .responsive {
+      width: 100%;
+      }
+      }
+      .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+
+
+
+
+
+/* ============================================ TEST ======================================= */
+#progress-wrapper {
+    text-align: center;
+}
+
+#nr1 {
+    background-color: #F16664;
+    color: #FFF;
+}
+
+.baricon {
+    display:inline-block;
+    border: 1px solid #F16664;
+    width: 30px;
+    border-radius:100%;
+    padding:6px;
+    background-color:#FFF;
+    color: #F16664;
+}
+
+.progress_bar {
+    width: 9px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #D8D8D8;
+    display:inline-block;
+}
+
+#vraag-2, #vraag-3, #vraag-4, #vraag-5, #vraag-6, #vraag-7, #vraag-8, #vraag-9, #vraag-10, #vraag-11, #vraag-12, #vraag-13, #vraag-14, #vraag-15, #vraag-16, #vraag-17 {
+    display:none;
+}
+
+
+
+/* ============================================ FOOTER =================================== */
+.footer-copyright p {
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:64px;
+    width:100%;
+    background: #F16664;
+    color: #FFF;
+    text-align: center;
+    box-shadow: 10px 0 0 0 black;
+    z-index: 1;
+}

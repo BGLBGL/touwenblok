@@ -1,0 +1,201 @@
+html
+    head
+        -var title = 'Touw'
+        include includes/head.pug
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        
+    body
+        include includes/navbar.pug
+        
+        .container
+          .inner-container
+              h1 Welkom bij Touw en Blok Amsterdam
+
+          .inner-container2
+                p ✓ PER UUR huren!
+                p ✓ 24/7
+                p ✓ Snel en gemakkelijk in Amsterdam Centrum!
+                p ✓ Contact via Whatsapp of direct bellen.
+                p ✓ De allerscherpste tarieven!
+
+      
+          .inner-container2
+            include includes/maps.pug
+
+          
+          img.mySlides(src='/../../public/styles/images/drmakete-lab-41999.jpg', )
+          |
+          img.mySlides(src='/../../public/styles/images/tim-boote-55683.jpg')
+          |  
+          img.mySlides(src='/../../public/styles/images/gwen-weustink-217586.jpg')
+
+          .start-test-button
+              a.btn(href='/reserveren') Boek nu
+
+
+        include includes/footer.pug
+
+        script.
+          var myIndex = 0;
+          carousel();
+          function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 5000); // Change image every 5 seconds
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- doctype html
+//- html
+//-   -var title='Touw en Blok Amsterdam Centrum'
+//-   include includes/head.pug
+//-   meta(name='viewport', content='width=device-width, initial-scale=1')
+//-   link(rel='stylesheet', href='Public/styles/css/main.css')
+//-   link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+//-   style.
+//-     .mySlides {display:none;}
+
+//-   body
+
+//-     include includes/navbar.pug
+
+//-     .container
+//-       .textt
+//-         h1 Touw en blok huren in Amsterdam Centrum. 
+//-         p Bij ons kunt u gemakkelijk en betrouwbaar ten alle tijden een touw en blok huren. Wij verhuren vanuit het centrum van het centrum: de Nieuwmarkt.
+//-       .buttonholder
+//-                       .start-test-button
+//-                           a.btn(href='/') Reserveer nu
+//-       .container2
+//-         img.mySlides(src='/../../public/styles/images/drmakete-lab-41999.jpg')
+//-         |
+//-         img.mySlides(src='/../../public/styles/images/tim-boote-55683.jpg')
+//-         |  
+//-         img.mySlides(src='/../../public/styles/images/gwen-weustink-217586.jpg')
+
+//-       .container3
+//-         .container4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //- .container2
+    //-   .month
+    //-   ul
+    //-     li.prev &#x276E;
+    //-     li.next &#x276F;
+    //-     li
+    //-       | August
+    //-       br
+    //-       |  
+    //-       span(style='font-size:18px') 2016
+    //-   ul.weekdays
+    //-     li Mo
+    //-     li Tu
+    //-     li We
+    //-     li Th
+    //-     li Fr
+    //-     li Sa
+    //-     li Su
+    //-   ul.days
+    //-     li 1
+    //-     li 2
+    //-     li 3
+    //-     li 4
+    //-     li 5
+    //-     li 6
+    //-     li 7
+    //-     li 8
+    //-     li 9
+    //-     li
+    //-       span.active 10
+    //-     li 11
+
+
+    include includes/footer.pug
+
+    script.
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
